@@ -74,10 +74,8 @@ html,body{font-family:"Fredoka","AaManYuShouXieTi","LXGW WenKai","ZCOOL KuaiLe",
 .home-deco .d{position:absolute;opacity:.92;animation:floaty 5s ease-in-out infinite;font-size:22px;filter:drop-shadow(0 2px 4px rgba(232,79,136,.18))}
 .home-deco .d.big{font-size:30px}
 @keyframes floaty{0%,100%{transform:translateY(0) rotate(-5deg)}50%{transform:translateY(-9px) rotate(6deg)}}
-.pink-rabbit{position:absolute;right:6px;top:4px;width:80px;height:auto;z-index:3;filter:drop-shadow(0 5px 10px rgba(232,79,136,.32));animation:bob 4s ease-in-out infinite}
-@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
-/* 首页柔和奶油粉头卡 */
-.home-hero{background:linear-gradient(135deg,#FF9BC0,#FFC8DF);box-shadow:0 8px 26px rgba(255,155,192,.32)}
+/* 首页柔和奶油粉头卡 — Hello Kitty × 小丸子 背景图 */
+.home-hero{background:url("hk_maruko_bg.jpg") center top/cover no-repeat;box-shadow:0 8px 26px rgba(255,155,192,.32);min-height:170px}
 
 /* ===== 卡片 ===== */
 .card{background:var(--card);border-radius:18px;padding:16px 18px;box-shadow:0 2px 12px var(--sh);margin-bottom:13px}
@@ -306,35 +304,6 @@ textarea.inp{resize:none;height:65px}
   <div class="statusbar"><span id="clk1">--:--</span><span class="r"><span style="font-size:19px;cursor:pointer" onclick="location.reload(true)" title="刷新页面">🔄</span></span></div>
 
   <div class="hero home-hero" style="padding:18px 22px 22px;min-height:148px">
-    <!-- 粉红兔子（右上角） -->
-    <svg class="pink-rabbit" viewBox="0 0 120 142" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-      <!-- 耳朵 -->
-      <ellipse cx="45" cy="30" rx="11" ry="30" fill="#FFD0E3" transform="rotate(-12 45 30)"/>
-      <ellipse cx="45" cy="32" rx="6" ry="20" fill="#FF9BC0" transform="rotate(-12 45 32)"/>
-      <ellipse cx="75" cy="30" rx="11" ry="30" fill="#FFD0E3" transform="rotate(12 75 30)"/>
-      <ellipse cx="75" cy="32" rx="6" ry="20" fill="#FF9BC0" transform="rotate(12 75 32)"/>
-      <!-- 头 -->
-      <circle cx="60" cy="74" r="37" fill="#FFE3EE"/>
-      <!-- 小身体 -->
-      <ellipse cx="60" cy="116" rx="27" ry="20" fill="#FFE3EE"/>
-      <!-- 腮红 -->
-      <ellipse cx="41" cy="84" rx="8" ry="5.5" fill="#FF9BC0" opacity=".6"/>
-      <ellipse cx="79" cy="84" rx="8" ry="5.5" fill="#FF9BC0" opacity=".6"/>
-      <!-- 眼睛（大+双高光） -->
-      <ellipse cx="49" cy="72" rx="6" ry="7.5" fill="#5A3D4A"/>
-      <ellipse cx="71" cy="72" rx="6" ry="7.5" fill="#5A3D4A"/>
-      <circle cx="51" cy="69" r="2.4" fill="#fff"/>
-      <circle cx="73" cy="69" r="2.4" fill="#fff"/>
-      <circle cx="47.5" cy="75" r="1.2" fill="#fff" opacity=".85"/>
-      <circle cx="69.5" cy="75" r="1.2" fill="#fff" opacity=".85"/>
-      <!-- 鼻子+嘴（w形） -->
-      <path d="M60 80 l-4.5 -4 h9 z" fill="#FF6B9D"/>
-      <path d="M60 84 q-5 5 -10 1 M60 84 q5 5 10 1" stroke="#FF6B9D" stroke-width="2" fill="none" stroke-linecap="round"/>
-      <!-- 蝴蝶结 -->
-      <path d="M60 42 l-12 -6 v13 z" fill="#FF6B9D"/>
-      <path d="M60 42 l12 -6 v13 z" fill="#FF6B9D"/>
-      <circle cx="60" cy="42" r="4" fill="#E84F88"/>
-    </svg>
     <h2 id="timeBig">--:--:--</h2>
     <p id="timeDate" class="weather-loading">正在获取位置和天气...</p>
     <button class="action" onclick="goPage('plan')">查看今日计划 →</button>
